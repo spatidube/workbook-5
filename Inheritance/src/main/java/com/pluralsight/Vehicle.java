@@ -1,11 +1,13 @@
 package com.pluralsight;
 
 public class Vehicle {
-    private String color;
-    private int numberOfPassengers;
-    private int cargoCapacity;
-    private int fuelCapacity;
+    //shared properties
+    String color;
+    int numberOfPassengers;
+    int cargoCapacity;
+    int fuelCapacity;
 
+    //Getters and Setters
     public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {
         this.color = color;
         this.numberOfPassengers = numberOfPassengers;
@@ -43,5 +45,9 @@ public class Vehicle {
 
     public void setFuelCapacity(int fuelCapacity) {
         this.fuelCapacity = fuelCapacity;
+    }
+    //lezz add a method
+    public void makeSound(){
+        System.out.println("Generic VEHICLE soww);
     }
 }
