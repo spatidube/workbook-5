@@ -4,18 +4,14 @@ public class Testing {
 
     public static void main(String[] args) {
         //Create a moped and get some features
-        Moped slowRide = new Moped();
-        slowRide.setColor("Pink");
-        slowRide.setFuelCapacity(5);
+        Moped slowRide = new Moped("Pink",5);
 
         //make a car and give it unique features
 
-        Car fastCar = new Car();
-        fastCar.setNumberOfPassengers(2);
+        Car fastCar = new Car(2);
 
         //make a semitruck and give it features
-        SemiTruck bigTruck = new SemiTruck();
-        bigTruck.setCargoCapacity(1000);
+        SemiTruck bigTruck = new SemiTruck(1000);
 
         //lets see what we did
         System.out.println("Moped Color: " + slowRide.getColor());
